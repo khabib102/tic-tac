@@ -1,0 +1,80 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.background-banner {
+    background-image: url('/pp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game {
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: #f9f9f900;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+#status {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+#score {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#score span {
+    font-size: 1.2rem;
+}
+
+#aiToggle {
+    margin-bottom: 20px;
+}
+
+#aiToggle label {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
